@@ -1,0 +1,67 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Segoe UI";
+}
+#header {
+  height: 80px;
+  background-color: #2c8c99;
+}
+#filter {
+  margin-top: 1px;
+  background-color: #326771;
+  height: 60px;
+}
+#list {
+  padding: 10px;
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#footer {
+  background-color: #28464b;
+  height: 80px;
+  clear: both;
+}
+
+.cartoon {
+  width: 250px;
+  height: 360px;
+  float: left;
+  margin-top: 10px;
+  background-color: transparent;
+  /* -webkit-box-shadow: 3px 0px 3px 0px rgba(50, 50, 50, 0.76);
+  -moz-box-shadow: 3px 0px 3px 0px rgba(50, 50, 50, 0.76);
+  box-shadow: 3px 0px 3px 0px rgba(50, 50, 50, 0.76); */
+}
+
+.cartoon .container {
+  margin: 5px;
+  border: 5px solid #ccc;
+}
+
+.cartoon .container:hover {
+  border: 5px dashed #dd0;
+  cursor: pointer;
+}
+
+.cartoon .title {
+  height: 50px;
+  background-color: #333;
+  color: #ddd;
+  text-align: center;
+}
+
+.cartoon .title span{
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.cartoon .image img {
+  width: 230px;
+  height: 270px;
+}
+
+.cartoon .rating span {
+  color: #fff;
+}
