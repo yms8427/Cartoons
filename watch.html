@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>Çizgi Filmler</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/watch.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo">
+        <img src="img/logo.png" alt="Çizgi Filmler" />
+      </div>
+      <div id="search">
+        <input type="text" placeholder="Ara" maxlength="60" />
+      </div>
+      <div id="auth">
+        <a href="#">Giriş Yap</a> |
+        <a href="#">Kayıt Ol</a>
+      </div>
+    </div>
+    <div id="list">
+      <div class="player">
+        <h3>BÖLÜM 1 - Pokémon - Seni Seçtim!</h3>
+        <div id="container">
+          <video id="myVideo" width="480" height="270" preload="none" poster="img/episodes/pokemon.jpg" controls>
+             <source src="video/pokemons1e1.mp4" type="video/mp4"></source>
+             <source src="video/pokemons1e1.ogg" type="video/ogg"></source>
+             <source src="video/pokemons1e1.webm" type="video/webm"></source>
+          </video>
+          <div id="controls">
+             <button id="start">Play</button>
+             <button id="stop" disabled>Stop</button>
+             <button id="pause" disabled>Pause</button>
+             <button id="plus" title="Volum" disabled>Up</button>
+             <button id="minus" title="Volum" disabled>Down</button>
+             <button id="mute" disabled>Mute</button>
+          </div>
+         <div id="progressbar">
+            <div id="loadingprogress"></div>
+            <div id="butterfly"></div>
+         </div>
+      </div>
+      </div>
+      <div class="episodes">
+        <h3>Diğer Bölümler</h3>
+        <ul>
+          <li>
+            <img src="img/episodes/pokemon.jpg" alt="Pokemon" />
+            <span class="eTitle"><b>Bölüm 1</b></span>
+            <span class="eName">Pokémon - Seni Seçtim!</span>
+          </li>
+          <li>
+            <img src="img/episodes/pokemon.jpg" alt="Pokemon" />
+            <span class="eTitle"><b>Bölüm 2</b></span>
+            <span class="eName">Pokémon Acil Durumu</span>
+          </li>
+          <li>
+            <img src="img/episodes/pokemon.jpg" alt="Pokemon" />
+            <span class="eTitle"><b>Bölüm 3</b></span>
+            <span class="eName">Ash Bir Pokémon Yakalıyor</span>
+          </li>
+          <li>
+            <img src="img/episodes/pokemon.jpg" alt="Pokemon" />
+            <span class="eTitle"><b>Bölüm 4</b></span>
+            <span class="eName">Samuray'ın Meydan Okuması</span>
+          </li>
+          <li>
+            <img src="img/episodes/pokemon.jpg" alt="Pokemon" />
+            <span class="eTitle"><b>Bölüm 5</b></span>
+            <span class="eName">Pewter Şehri'ndeki Hesaplaşma</span>
+          </li>
+          <li>
+            <img src="img/episodes/pokemon.jpg" alt="Pokemon" />
+            <span class="eTitle"><b>Bölüm 6</b></span>
+            <span class="eName">Clefairy ve Ay Taşı</span>
+          </li>
+          <li>
+            <img src="img/episodes/pokemon.jpg" alt="Pokemon" />
+            <span class="eTitle"><b>Bölüm 7</b></span>
+            <span class="eName">Cerulean Şehri'nin Su Çiçekleri</span>
+          </li>
+          <li>
+            <img src="img/episodes/pokemon.jpg" alt="Pokemon" />
+            <span class="eTitle"><b>Bölüm 8</b></span>
+            <span class="eName">Pokémon Ligi'ne Giden Yol</span>
+          </li>
+          <li>
+            <img src="img/episodes/pokemon.jpg" alt="Pokemon" />
+            <span class="eTitle"><b>Bölüm 9</b></span>
+            <span class="eName">Zorlukların Okulu</span>
+          </li>
+          <li>
+            <img src="img/episodes/pokemon.jpg" alt="Pokemon" />
+            <span class="eTitle"><b>Bölüm 10</b></span>
+            <span class="eName">Bulbasaur ve Saklı Köy</span>
+          </li>
+          <li>
+            <img src="img/episodes/pokemon.jpg" alt="Pokemon" />
+            <span class="eTitle"><b>Bölüm 11</b></span>
+            <span class="eName">Başıboş Pokémon Charmander</span>
+          </li>
+          <li>
+            <img src="img/episodes/pokemon.jpg" alt="Pokemon" />
+            <span class="eTitle"><b>Bölüm 12</b></span>
+            <span class="eName">İşte Squirtle Takımı Geliyor</span>
+          </li>
+          <li>
+            <img src="img/episodes/pokemon.jpg" alt="Pokemon" />
+            <span class="eTitle"><b>Bölüm 13</b></span>
+            <span class="eName">Deniz Fenerindeki Gizem</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="footer">
+      <div>Tüm Hakları Saklıdır. 2020 &copy;</div>
+      <div>İletişim Can Perk Yapım Medya Limited Şirketi</div>
+      <div>
+        <a href="mailto:bilgi@cartoons.com">bilgi@cartoons.com</a>
+      </div>
+    </div>
+    <script src="js/watch.js"></script>
+  </body>
+</html>

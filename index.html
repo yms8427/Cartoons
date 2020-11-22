@@ -2,19 +2,51 @@
   <head>
     <title>Çizgi Filmler</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/site.js"></script>
   </head>
   <body>
-    <div id="header"><span>Başlık</span></div>
-    <div id="filter">Filtre</div>
+    <div id="header">
+      <div id="logo">
+        <img src="img/logo.png" alt="Çizgi Filmler" />
+      </div>
+      <div id="search">
+        <input type="text" placeholder="Ara" maxlength="60" />
+      </div>
+      <div id="auth">
+        <a href="#">Giriş Yap</a> |
+        <a href="#">Kayıt Ol</a>
+      </div>
+    </div>
+    <div id="filter">
+      <div>
+        <span>Firma</span>
+        <select>
+          <option>Seçiniz</option>
+          <option>Walt Disney</option>
+          <option>Nintendo</option>
+          <option>Grafi</option>
+          <option>Looney Tunes</option>
+          <option>Pixar</option>
+          <option>Blue Sky</option>
+        </select>
+        <span>Çıkış Yılı</span>
+        <input id="txtYear" type="text" disabled value="1998" />
+        <button onclick="increase()">+</button>
+        <button onclick="decrease()">-</button>
+        <button id="btnSearch">Ara</button>
+      </div>
+    </div>
     <div id="list">
       <div class="cartoon">
         <div class="container">
           <div class="rating">
             <span>İzlenme : 9738</span>
-            <span>5 Yıldız</span>
+            <span class="right">5 Yıldız</span>
           </div>
           <div class="image">
-            <img src="img/1.jpg" alt="Pokemon" />
+            <a href="watch.html">
+              <img src="img/1.jpg" alt="Pokemon" />
+            </a>
           </div>
           <div class="title"><span>Pokemon</span></div>
         </div>
@@ -23,10 +55,10 @@
         <div class="container">
           <div class="rating">
             <span>İzlenme : 6733</span>
-            <span>4 Yıldız</span>
+            <span class="right">4 Yıldız</span>
           </div>
           <div class="image">
-            <img src="img/2.jpg" alt="Flinstones" />
+            <a href="watch.html"> <img src="img/2.jpg" alt="Flinstones" /></a>
           </div>
           <div class="title"><span>Çakmaktaş Ailesi</span></div>
         </div>
@@ -35,10 +67,10 @@
         <div class="container">
           <div class="rating">
             <span>İzlenme : 6733</span>
-            <span>4 Yıldız</span>
+            <span class="right">4 Yıldız</span>
           </div>
           <div class="image">
-            <img src="img/3.jpg" alt="She-Ra" />
+            <a href="watch.html"> <img src="img/3.jpg" alt="She-Ra" /></a>
           </div>
           <div class="title"><span>She-Ra</span></div>
         </div>
@@ -47,10 +79,10 @@
         <div class="container">
           <div class="rating">
             <span>İzlenme : 6733</span>
-            <span>4 Yıldız</span>
+            <span class="right">4 Yıldız</span>
           </div>
           <div class="image">
-            <img src="img/4.jpg" alt="Kral Şakir" />
+            <a href="watch.html"> <img src="img/4.jpg" alt="Kral Şakir" /></a>
           </div>
           <div class="title"><span>Kral Şakir</span></div>
         </div>
@@ -59,10 +91,10 @@
         <div class="container">
           <div class="rating">
             <span>İzlenme : 6733</span>
-            <span>4 Yıldız</span>
+            <span class="right">4 Yıldız</span>
           </div>
           <div class="image">
-            <img src="img/5.jpg" alt="Bugs Bunny" />
+            <a href="watch.html"> <img src="img/5.jpg" alt="Bugs Bunny" /></a>
           </div>
           <div class="title">Bugs Bunny</div>
         </div>
@@ -71,10 +103,12 @@
         <div class="container">
           <div class="rating">
             <span>İzlenme : 6733</span>
-            <span>4 Yıldız</span>
+            <span class="right">4 Yıldız</span>
           </div>
           <div class="image">
-            <img src="img/6.jpg" alt="Tom and Jerry" />
+            <a href="watch.html">
+              <img src="img/6.jpg" alt="Tom and Jerry"
+            /></a>
           </div>
           <div class="title">Tom ve Jerry</div>
         </div>
@@ -83,10 +117,10 @@
         <div class="container">
           <div class="rating">
             <span>İzlenme : 6733</span>
-            <span>4 Yıldız</span>
+            <span class="right">4 Yıldız</span>
           </div>
           <div class="image">
-            <img src="img/7.jpg" alt="Donald Duck" />
+            <a href="watch.html"> <img src="img/7.jpg" alt="Donald Duck" /></a>
           </div>
           <div class="title">Donald Duck</div>
         </div>
@@ -95,10 +129,10 @@
         <div class="container">
           <div class="rating">
             <span>İzlenme : 6733</span>
-            <span>4 Yıldız</span>
+            <span class="right">4 Yıldız</span>
           </div>
           <div class="image">
-            <img src="img/8.jpg" alt="Smurfs" />
+            <a href="watch.html"> <img src="img/8.jpg" alt="Smurfs" /></a>
           </div>
           <div class="title">Şirinler</div>
         </div>
@@ -107,10 +141,10 @@
         <div class="container">
           <div class="rating">
             <span>İzlenme : 6733</span>
-            <span>4 Yıldız</span>
+            <span class="right">4 Yıldız</span>
           </div>
           <div class="image">
-            <img src="img/9.jpg" alt="Mickey" />
+            <a href="watch.html"> <img src="img/9.jpg" alt="Mickey" /></a>
           </div>
           <div class="title">Mickey Mouse</div>
         </div>
@@ -119,10 +153,12 @@
         <div class="container">
           <div class="rating">
             <span>İzlenme : 6733</span>
-            <span>4 Yıldız</span>
+            <span class="right">4 Yıldız</span>
           </div>
           <div class="image">
-            <img src="img/10.jpg" alt="Ninja Turtles" />
+            <a href="watch.html">
+              <img src="img/10.jpg" alt="Ninja Turtles"
+            /></a>
           </div>
           <div class="title">Ninja Kaplumbağalar</div>
         </div>
@@ -131,10 +167,10 @@
         <div class="container">
           <div class="rating">
             <span>İzlenme : 6733</span>
-            <span>4 Yıldız</span>
+            <span class="right">4 Yıldız</span>
           </div>
           <div class="image">
-            <img src="img/11.jpg" alt="Scooby Doo" />
+            <a href="watch.html"> <img src="img/11.jpg" alt="Scooby Doo" /></a>
           </div>
           <div class="title">Scooby Doo</div>
         </div>
@@ -143,15 +179,23 @@
         <div class="container">
           <div class="rating">
             <span>İzlenme : 6733</span>
-            <span>4 Yıldız</span>
+            <span class="right">4 Yıldız</span>
           </div>
           <div class="image">
-            <img src="img/12.jpg" alt="Ghostbusters" />
+            <a href="watch.html">
+              <img src="img/12.jpg" alt="Ghostbusters"
+            /></a>
           </div>
           <div class="title">Hayalet Avcıları</div>
         </div>
       </div>
     </div>
-    <div id="footer">Alt Bölüm</div>
+    <div id="footer">
+      <div>Tüm Hakları Saklıdır. 2020 &copy;</div>
+      <div>İletişim Can Perk Yapım Medya Limited Şirketi</div>
+      <div>
+        <a href="mailto:bilgi@cartoons.com">bilgi@cartoons.com</a>
+      </div>
+    </div>
   </body>
 </html>
